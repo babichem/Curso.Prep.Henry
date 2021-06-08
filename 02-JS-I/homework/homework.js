@@ -28,9 +28,8 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  var nombre = 'Henry';
+  var nombre = str;
   return nombre;
-  
 }
 
 function suma(x, y) {
@@ -39,16 +38,14 @@ function suma(x, y) {
   // Tu código:
    var suma = x + y;
    return suma;
-   suma (1,4);
- 
-}
+   }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
   var resta = x - y;
    return resta;
-   resta (5,4);
+   
 }
 
 function multiplica(x, y) {
@@ -56,8 +53,7 @@ function multiplica(x, y) {
   // Tu código:
   var multiplica = x * y;
    return multiplica;
-   multiplica (2,3);
-}
+   }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
@@ -72,24 +68,23 @@ function sonIguales(x, y) {
   // De lo contrario, devuelve "false"
   // Tu código:
   
-  if (x==y) {
+  if (x===y) {
     return true;
   }
   return false;
 }
-sonIguales(15,15);
+
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
  
-  if (str1.length==str2.length) {
+  if (str1.length===str2.length) {
     return true;
   }
   return false;
 }
-tienenMismaLongitud('miguel', 'felix');
 
 
 function menosQueNoventa(num) {
@@ -101,7 +96,6 @@ function menosQueNoventa(num) {
   }
   return false;
 }
-menosQueNoventa(80);
 
 
 function mayorQueCincuenta(num) {
@@ -113,7 +107,6 @@ function mayorQueCincuenta(num) {
   }
   return false;
 }
-mayorQueCincuenta(60)
 
 
 function obtenerResto(x, y) {
@@ -121,19 +114,19 @@ function obtenerResto(x, y) {
   // Tu código:
   var obtenerResto = x % y;
    return obtenerResto;
-   obtenerResto (20,3);
+   
 }
+
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num%2==0) {
+  if (num%2===0) {
     return true;
   }
   return false;
 }
-esPar(6);
 
 
 function esImpar(num) {
@@ -145,7 +138,6 @@ function esImpar(num) {
   }
   return false;
 }
-esImpar(5);
 
 
 function elevarAlCuadrado(num) {
@@ -154,23 +146,22 @@ function elevarAlCuadrado(num) {
   // Tu código:
   let elevarAlCuadrado=Math.pow(num,2);
   return elevarAlCuadrado
-  elevarAlCuadrado(5);
-}
+  }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
   let elevarAlCubo=Math.pow(num,3);
   return elevarAlCubo
-  elevarAlCubo(4);
-}
+ }
+
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
   let elevar=Math.pow(num,exponent);
   return elevar
-  elevar(5,2);
+  
 }
 
 function redondearNumero(num) {
@@ -178,7 +169,7 @@ function redondearNumero(num) {
   // Tu código:
   let redondearNumero=Math.round(num);
   return redondearNumero;
-  redondearNumero(4.995);
+  
 }
 
 function redondearHaciaArriba(num) {
@@ -186,7 +177,7 @@ function redondearHaciaArriba(num) {
   // Tu código:
   let redondearHaciaArriba=Math.ceil(num);
   return redondearHaciaArriba;
-  redondearHaciaArriba(3.555);
+  
 }
 
 function numeroRandom() {
@@ -194,8 +185,7 @@ function numeroRandom() {
   //Pista: investigá qué hace el método Math.random()
   let numeroRandom=Math.random();
   return numeroRandom;
-  numeroRandom();
-}
+  }
 
 function esPositivo(numero) {
   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
@@ -203,7 +193,7 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   let elnumero;
-    if (numero==0){
+    if (numero===0){
       return false;
     }
     if (numero>0){
@@ -211,8 +201,6 @@ function esPositivo(numero) {
     if (numero<0) {
       return elnumero='Es negativo';}
   }
-
-esPositivo(7);
 
 
 function agregarSimboloExclamacion(str) {
@@ -286,19 +274,19 @@ function esVocal(letra){
   //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   //Escribe tu código aquí
-  if (letra=='a' && letra.length==1){
+  if (letra==='a' && letra.length===1){
     return vocal='Es vocal';
   }
-  if (letra=='e' && letra.length==1){
+  if (letra==='e' && letra.length===1){
     return vocal='Es vocal';
   }
-  if (letra=='i' && letra.length==1){
+  if (letra==='i' && letra.length===1){
     return vocal='Es vocal';
   }
-  if (letra=='o' && letra.length==1){
+  if (letra==='o' && letra.length===1){
     return vocal='Es vocal';
   }
-  if (letra=='u' && letra.length==1){
+  if (letra==='u' && letra.length===1){
     return vocal='Es vocal';
   }
   if (letra.length>1){

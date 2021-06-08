@@ -42,7 +42,6 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // y devuelve el array
   // Tu código:
   const arr=array;
-  var elem=elemento;
   arr.push(elemento);
   return arr;
 }
@@ -54,7 +53,6 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // Pista: usa el método `.unshift`
   // Tu código:
   const arr=array;
-  var elem=elemento;
   arr.unshift(elemento);
   return arr;
 }
@@ -78,7 +76,7 @@ function arrayContiene(array, elemento) {
   // Tu código:
   const cont=array;
   for (let i = 0; i < cont.length; i++) {
-    if (cont[i]==elemento){
+    if (cont[i]===elemento){
       return true
     }
 }
@@ -183,8 +181,7 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  var emp=n;
- var  i=0;
+  var emp;
 emp= n.toString().split('');
   if (emp[0]==='9'){
     return true;
@@ -200,9 +197,7 @@ function todosIguales(arreglo) {
   //Escribe tu código aquí  
   const igual=arreglo;
   var i=0;
-  var cont=0;
-  var cont1=0;
-  for (i = 0; i < igual.length-1; i++) {
+   for (i = 0; i < igual.length-1; i++) {
     if (igual[i]!==igual[i+1]){
       return false;
           }
